@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The World Of Conspiracy - by saint</title>
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1224472625364074506/1234656577622118460/R_1.png?ex=6631870a&is=6630358a&hm=ac336c55277418589cd1ef7f6d0e876628c9f7da42c016eb3cde612fa693af73&">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .theory {
+        margin-bottom: 30px;
+    }
+
+    .theory:last-child {
+        margin-bottom: 0;
+    }
+
+    .source {
+        font-style: italic;
+        color: #0084ff;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0084ff;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+    }
+
+    /* Eerie animation */
+    @keyframes eerie {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(5deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    .eerie-animation {
+        animation: eerie 10s infinite alternate;
+    }
+
+    /* Button */
+    .btn-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+
+    .btn {
+        background-color: #00ff22;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #00ff22;
+    }
+
+</style>
+</head>
+<body>
+<audio id="backgroundAudio" loop>
+    <source src="https://cdn.discordapp.com/attachments/1224472625364074506/1233045096962981988/audiogiggle.mp3?ex=6630f03b&amp;is=662f9ebb&amp;hm=27c2dd5919db039e3aca57343c9f975f6933351adf71fac47e75a0d95872aeea&amp;" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="container">
+    <h1 class="title mb-8">The World Of Conspiracy</h1>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Area 51 Extraterrestrial Research</h2>
+        <p class="text-gray-400">Rumors suggest that the CIA has been working with extraterrestrial beings in Area 51 since the 1950s. Some believe that the government is hiding evidence of alien encounters and advanced technology.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Area_51" target="_blank">Source: Unclassified</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">9/11 Inside Job</h2>
+        <p class="text-gray-400">Some believe that the CIA orchestrated the 9/11 attacks to justify military intervention in the Middle East.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/9/11_conspiracy_theories" target="_blank">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Mind Control Experiments</h2>
+        <p class="text-gray-400">There are claims that the CIA conducted secret experiments on mind control using techniques such as hypnosis and drugs.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Project_MKUltra" target="_blank">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Chemtrails</h2>
+        <p class="text-gray-400">Conspiracy theorists argue that the trails left by airplanes are actually chemicals sprayed by the government for sinister purposes.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Chemtrail_conspiracy_theory" target="_blank">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Alien Autopsy in Roswell</h2>
+        <p class="text-gray-400">Some claim that the CIA conducted an autopsy on an alien body recovered from the Roswell UFO crash in 1947.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Roswell_UFO_incident" target="_blank"">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">New World Order</h2>
+        <p class="text-gray-400">Conspiracy theorists allege the existence of a secret elite group aiming to establish a totalitarian world government.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/New_World_Order_(conspiracy_theory)" target="_blank"">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Moon Landing Hoax</h2>
+        <p class="text-gray-400">Some believe that the CIA staged the moon landing in 1969 as a propaganda tool during the Cold War.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Moon_landing_conspiracy_theories" target="_blank"">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Flat Earth Theory</h2>
+        <p class="text-gray-400">Conspiracy theorists claim that the Earth is flat and that governments and space agencies are hiding this fact.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Flat_Earth" target="_blank"">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">JFK Assassination Cover-Up</h2>
+        <p class="text-gray-400">Some believe that the CIA was involved in a cover-up of the true circumstances surrounding the assassination of President John F. Kennedy.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy" target="_blank"">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Hollow Earth</h2>
+        <p class="text-gray-400">Conspiracy theorists argue that the Earth is hollow and contains a hidden civilization within its core.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Hollow_Earth" target="_blank">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Vaccination Conspiracy</h2>
+        <p class="text-gray-400">Some claim that vaccinations are part of a plot by governments and pharmaceutical companies to control and harm the population.</p>
+        <p class="source"><a href="https://en.wikipedia.org/wiki/Vaccine_conspiracy_theories" target="_blank">Source: Wikipedia</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Ancient Aliens Influence Religion</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that ancient religions and myths were influenced by interactions with extraterrestrial beings, shaping human spirituality and beliefs.</p>
+        <p class="source"><a href="#" target="_blank">Source: Ancient Astronaut Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The New Coke Conspiracy</h2>
+        <p class="text-gray-400">Some believe that the introduction of New Coke in 1985 was a deliberate ploy by Coca-Cola to rebrand and boost sales of their original formula.</p>
+        <p class="source"><a href="#" target="_blank">Source: Marketing Critics</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Titanic Switch</h2>
+        <p class="text-gray-400">Some believe that the sinking of the Titanic was part of an insurance scam, involving the switch of the ship with its sister ship, the Olympic.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Ancient Astronauts</h2>
+        <p class="text-gray-400">Conspiracy theorists speculate that ancient civilizations were visited by extraterrestrial beings, who helped build monumental structures and imparted advanced knowledge.</p>
+        <p class="source"><a href="#" target="_blank">Source: Ancient Astronaut Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Elvis Presley Faked His Death</h2>
+        <p class="text-gray-400">Some believe that Elvis Presley faked his death to escape the pressures of fame and live a quiet life away from the spotlight.</p>
+        <p class="source"><a href="#" target="_blank">Source: Elvis Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Philadelphia Experiment</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that the U.S. Navy conducted a secret experiment to render a warship invisible, resulting in teleportation and time travel.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Forums</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Chemical Trails in the Sky</h2>
+        <p class="text-gray-400">Some believe that the trails left by airplanes are actually chemicals sprayed by the government for weather modification, population control, or other undisclosed purposes.</p>
+        <p class="source"><a href="#" target="_blank">Source: Alternative News Sites</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Cloning of World Leaders</h2>
+        <p class="text-gray-400">Conspiracy theorists speculate that world leaders and influential figures are secretly cloned by a shadowy organization to maintain control over global affairs.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Websites</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Satanic Ritual Abuse</h2>
+        <p class="text-gray-400">Some believe that powerful individuals engage in satanic rituals involving abuse, sacrifice, and trafficking of children as part of a dark conspiracy.</p>
+        <p class="source"><a href="#" target="_blank">Source: Alternative Media Outlets</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Phantom Time Hypothesis</h2>
+        <p class="text-gray-400">Conspiracy theorists propose that a significant portion of history, particularly the Early Middle Ages, was fabricated or distorted to serve political or religious agendas.</p>
+        <p class="source"><a href="#" target="_blank">Source: Historical Revisionists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Satellite Mind Control</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that governments and intelligence agencies use satellites to transmit mind-control signals, influencing thoughts and behavior on a global scale.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Blogs</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Black Knight Satellite</h2>
+        <p class="text-gray-400">Some believe that an artificial satellite of extraterrestrial origin, known as the Black Knight Satellite, orbits the Earth and is monitored by governments.</p>
+        <p class="source"><a href="#" target="_blank">Source: UFO Enthusiasts</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Hollow Moon Theory</h2>
+        <p class="text-gray-400">Conspiracy theorists claim that the moon is hollow and serves as a base for extraterrestrial civilizations or secret government operations.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Websites</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Reincarnation of Historical Figures</h2>
+        <p class="text-gray-400">Some believe that certain individuals are reincarnations of historical figures, allowing them to possess knowledge and skills from past lives.</p>
+        <p class="source"><a href="#" target="_blank">Source: New Age Beliefs</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Simulation Hypothesis</h2>
+        <p class="text-gray-400">Conspiracy theorists suggest that reality is a simulated construct, akin to a computer-generated virtual reality, created by advanced beings or artificial intelligence.</p>
+        <p class="source"><a href="#" target="_blank">Source: Futurists and Philosophers</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Corporate Control of Government</h2>
+        <p class="text-gray-400">Some argue that multinational corporations wield significant influence over governments, shaping policies and agendas to serve corporate interests.</p>
+        <p class="source"><a href="#" target="_blank">Source: Political Activists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Bermuda Triangle Mystery</h2>
+        <p class="text-gray-400">Some believe that the Bermuda Triangle is a portal to another dimension or a site of extraterrestrial activity, responsible for the disappearance of numerous ships and planes.</p>
+        <p class="source"><a href="#" target="_blank">Source: Bermuda Triangle Enthusiasts</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Illuminati Control</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that a secret society, known as the Illuminati, manipulates global events and governments to establish a New World Order.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Flat Mars Society</h2>
+        <p class="text-gray-400">Similar to the Flat Earth theory, some claim that Mars is flat and that space agencies fabricate images and data to conceal the truth.</p>
+        <p class="source"><a href="#" target="_blank">Source: Mars Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Curse of the Pharaohs</h2>
+        <p class="text-gray-400">Legends suggest that the tombs of ancient Egyptian pharaohs are cursed, leading to misfortune or death for those who disturb them.</p>
+        <p class="source"><a href="#" target="_blank">Source: Archaeological Myths</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Subterranean Reptilian Overlords</h2>
+        <p class="text-gray-400">Conspiracy theories propose that reptilian humanoid beings live beneath the Earth's surface and secretly control human civilization.</p>
+        <p class="source"><a href="#" target="_blank">Source: Reptilian Conspiracy Theorists</a></p>
+    </div>
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Lost City of Atlantis</h2>
+        <p class="text-gray-400">Conspiracy theorists speculate that the mythical island of Atlantis was a highly advanced civilization that disappeared due to natural disasters or extraterrestrial intervention.</p>
+        <p class="source"><a href="#" target="_blank">Source: Ancient Texts and Legends</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Chemical Food Additives</h2>
+        <p class="text-gray-400">Some believe that food additives such as MSG and aspartame are intentionally added by corporations and governments to control minds and weaken the population.</p>
+        <p class="source"><a href="#" target="_blank">Source: Health Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Remote Mind Reading</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that governments and intelligence agencies possess technology capable of remotely reading and controlling thoughts, infringing on privacy and individual autonomy.</p>
+        <p class="source"><a href="#" target="_blank">Source: Paranormal Researchers</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Time Travel Experiments</h2>
+        <p class="text-gray-400">Some believe that secret government projects have achieved time travel capabilities, altering historical events and manipulating the timeline for unknown purposes.</p>
+        <p class="source"><a href="#" target="_blank">Source: Time Travel Enthusiasts</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Suppressed Cancer Cures</h2>
+        <p class="text-gray-400">Conspiracy theorists claim that pharmaceutical companies and medical institutions suppress alternative cancer treatments and cures to maintain profits from traditional therapies.</p>
+        <p class="source"><a href="#" target="_blank">Source: Alternative Health Advocates</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Transhumanist Agenda</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that a secretive group of elites aims to merge humans with technology, creating a transhumanist society where individuals lose their autonomy and become controlled by artificial intelligence.</p>
+        <p class="source"><a href="#" target="_blank">Source: Techno-Skeptics</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Water Fluoridation Conspiracy</h2>
+        <p class="text-gray-400">Some believe that fluoride added to public water supplies is used for mind control or population sterilization purposes, rather than dental health benefits as claimed.</p>
+        <p class="source"><a href="#" target="_blank">Source: Anti-Fluoridation Activists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Curse of the Kennedy Family</h2>
+        <p class="text-gray-400">Conspiracy theories speculate that the Kennedy family is cursed, with many members meeting untimely deaths or facing tragic fates as a result of their involvement in politics and business.</p>
+        <p class="source"><a href="#" target="_blank">Source: Paranormal Researchers</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Mayan Prophecy</h2>
+        <p class="text-gray-400">Some believe that the ancient Mayans predicted the end of the world in 2012, and that events such as natural disasters and societal collapse are signs of the impending apocalypse.</p>
+        <p class="source"><a href="#" target="_blank">Source: New Age Beliefs</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Rosicrucian Conspiracy</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that the Rosicrucian Order, a secretive esoteric society, wields significant influence over world events and operates behind the scenes to manipulate society.</p>
+        <p class="source"><a href="#" target="_blank">Source: Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Saturn Worship</h2>
+        <p class="text-gray-400">Some believe that an ancient cult worships the planet Saturn as a god, and that symbols associated with Saturn, such as the hexagram and the cube, hold occult significance.</p>
+        <p class="source"><a href="#" target="_blank">Source: Occult Researchers</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Philadelphia Experiment</h2>
+        <p class="text-gray-400">Conspiracy theories suggest that the U.S. Navy conducted experiments to render a warship invisible to radar during World War II, resulting in teleportation and time travel effects.</p>
+        <p class="source"><a href="#" target="_blank">Source: Paranormal Investigators</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Curse of Tutankhamun's Tomb</h2>
+        <p class="text-gray-400">Legends claim that those who entered the tomb of the ancient Egyptian pharaoh Tutankhamun were cursed with misfortune or death, leading to the belief in supernatural retribution.</p>
+        <p class="source"><a href="#" target="_blank">Source: Archaeological Myths</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Global Warming Hoax</h2>
+        <p class="text-gray-400">Some argue that the scientific consensus on climate change is fabricated, with climate data manipulated to promote political agendas and control energy resources.</p>
+        <p class="source"><a href="#" target="_blank">Source: Climate Change Skeptics</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Phantom Time Hypothesis</h2>
+        <p class="text-gray-400">Conspiracy theorists propose that a significant portion of human history, including the Middle Ages, was fabricated or misdated, suggesting that we are living in a different historical period than believed.</p>
+        <p class="source"><a href="#" target="_blank">Source: Historical Revisionists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Reptilian Shapeshifters</h2>
+        <p class="text-gray-400">Some believe that prominent figures in politics and entertainment are reptilian humanoid beings in disguise, using advanced technology to maintain their human appearance while secretly controlling world affairs.</p>
+        <p class="source"><a href="#" target="_blank">Source: Reptilian Conspiracy Theorists</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Secret Space Program</h2>
+        <p class="text-gray-400">Some believe that governments operate a clandestine space program with advanced spacecraft and off-world colonies, hidden from public knowledge and used for undisclosed purposes.</p>
+        <p class="source"><a href="#" target="_blank">Source: Space Exploration Enthusiasts</a></p>
+    </div>
+    
+    <div class="theory mb-8">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">The Multiverse Conspiracy</h2>
+        <p class="text-gray-400">Conspiracy theorists propose that the existence of parallel universes and alternate dimensions is suppressed by mainstream science and governments to maintain control over knowledge and reality.</p>
+        <p class="source"><a href="#" target="_blank">Source: Quantum Mystics</a></p>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script>
+// JavaScript for typing effect
+const title = document.querySelector('.title');
+const text = title.textContent.trim();
+title.textContent = '';
+
+let index = 0;
+
+function type() {
+    if (index <= text.length) {
+        title.textContent = text.substring(0, index);
+        index++;
+        setTimeout(type, 150); // Adjusted typing speed
+    } else {
+        index = 0; // Reset index to loop typing animation
+        setTimeout(type, 1000); // Delay before restarting typing animation
+    }
+}
+
+type();
+    // JavaScript to play background audio on page load
+    const backgroundAudio = document.getElementById('backgroundAudio');
+    document.addEventListener('click', function() {
+        if (backgroundAudio.paused) {
+            backgroundAudio.play();
+        }
+    });
+</script>
+
+</body>
+</html>
