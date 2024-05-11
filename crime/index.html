@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Crime</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #d4d4d4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .crime {
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #333333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            animation: eerie-glow 3s infinite alternate;
+        }
+
+        .crime:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes eerie-glow {
+            0% {
+                background-color: #333333;
+            }
+            100% {
+                background-color: #4a004a;
+            }
+        }
+
+        .crime h2 {
+            color: #e5e5e5;
+        }
+
+        .crime p {
+            color: #b3b3b3;
+        }
+
+        .source-btn {
+            background-color: #330033;
+            color: #e5e5e5;
+            border: none;
+            border-radius: 3px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .source-btn:hover {
+            background-color: #4a004a;
+            transform: translateY(-2px);
+        }
+
+          /* Popup Style */
+          .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background-color: #333333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .popup-content h1 {
+            color: #e5e5e5;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .popup-content button {
+            background-color: #330033;
+            color: #e5e5e5;
+            border: none;
+            border-radius: 3px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .popup-content button:hover {
+            background-color: #4a004a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<!-- Confirmation Popup -->
+<div class="popup-overlay" id="popup-overlay">
+    <div class="popup-content">
+        <h1>The World of Crime</h1>
+        <p>This website contains content intended for mature audiences. Are you sure you want to enter?</p>
+        <button onclick="showContent()">Continue</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="text-3xl font-bold text-center mb-8">The World of Crime</h1>
+
+    <!-- Crime Cards -->
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Black Death</h2>
+        <p>One of the deadliest pandemics in human history, the Black Death, caused by the bacterium Yersinia pestis, swept through Europe in the 14th century, resulting in the deaths of an estimated 75-200 million people.</p>
+        <a href="https://en.wikipedia.org/wiki/Black_Death" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Great Fire of London</h2>
+        <p>In September 1666, a devastating fire swept through the city of London, destroying a large part of the city, including thousands of homes and landmark buildings such as St. Paul's Cathedral.</p>
+        <a href="https://en.wikipedia.org/wiki/Great_Fire_of_London" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Lindbergh Kidnapping</h2>
+        <p>In 1932, Charles Lindbergh Jr., the 20-month-old son of aviator Charles Lindbergh, was kidnapped from his home in New Jersey. Despite ransom payments, the child was found dead two months later, and the case remains one of the most infamous crimes in American history.</p>
+        <a href="https://en.wikipedia.org/wiki/Lindbergh_kidnapping" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Assassination of John F. Kennedy</h2>
+        <p>On November 22, 1963, President John F. Kennedy was assassinated while riding in a motorcade in Dallas, Texas. The assassination sparked numerous conspiracy theories and remains one of the most investigated events in American history.</p>
+        <a href="https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Jonestown Massacre</h2>
+        <p>In November 1978, over 900 members of the Peoples Temple, led by Jim Jones, died in a mass murder-suicide in Jonestown, Guyana. It remains one of the largest single-day losses of American civilian life in a deliberate act until the September 11 attacks in 2001.</p>
+        <a href="https://en.wikipedia.org/wiki/Jonestown" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Oklahoma City Bombing</h2>
+        <p>On April 19, 1995, a truck bomb exploded outside the Alfred P. Murrah Federal Building in Oklahoma City, killing 168 people and injuring hundreds more. It was the deadliest act of domestic terrorism in U.S. history at the time.</p>
+        <a href="https://en.wikipedia.org/wiki/Oklahoma_City_bombing" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Rwandan Genocide</h2>
+        <p>In 1994, an estimated 800,000 Rwandans, primarily Tutsis, were killed in a genocidal campaign carried out by extremist Hutu militias. The genocide occurred over a span of 100 days, marking one of the darkest chapters in African history.</p>
+        <a href="https://en.wikipedia.org/wiki/Rwandan_genocide" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The 9/11 Terrorist Attacks</h2>
+        <p>On September 11, 2001, a series of coordinated terrorist attacks by the Islamic extremist group al-Qaeda resulted in the destruction of the World Trade Center towers in New York City, damage to the Pentagon in Arlington, Virginia, and the deaths of nearly 3,000 people.</p>
+        <a href="https://en.wikipedia.org/wiki/September_11_attacks" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Virginia Tech Massacre</h2>
+        <p>On April 16, 2007, a gunman opened fire on the campus of Virginia Tech in Blacksburg, Virginia, killing 32 people and injuring many others before committing suicide. It remains the deadliest school shooting in U.S. history.</p>
+        <a href="https://en.wikipedia.org/wiki/Virginia_Tech_shooting" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Boston Marathon Bombing</h2>
+        <p>On April 15, 2013, two homemade bombs exploded near the finish line of the Boston Marathon, killing three people and injuring hundreds more. The perpetrators, two brothers of Chechen descent, were later apprehended.</p>
+        <a href="https://en.wikipedia.org/wiki/Boston_Marathon_bombing" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Black Dahlia Murder</h2>
+        <p>In 1947, the mutilated body of Elizabeth Short, nicknamed the Black Dahlia, was found in Los Angeles. The case remains unsolved and has become one of the most infamous unsolved murders in American history.</p>
+        <a href="https://en.wikipedia.org/wiki/Black_Dahlia" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Axeman of New Orleans</h2>
+        <p>In 1918-1919, a serial killer known as the Axeman terrorized the city of New Orleans, killing and maiming several victims with an axe. The identity of the Axeman remains unknown.</p>
+        <a href="https://en.wikipedia.org/wiki/Axeman_of_New_Orleans" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Zodiac Killer</h2>
+        <p>During the late 1960s and early 1970s, the Zodiac Killer carried out a series of murders in Northern California. The killer taunted police and the public with cryptic letters containing ciphers, but was never caught.</p>
+        <a href="https://en.wikipedia.org/wiki/Zodiac_Killer" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Mary Celeste Mystery</h2>
+        <p>In 1872, the crew of the Mary Celeste, an American merchant ship, was discovered missing under mysterious circumstances in the Atlantic Ocean. The ship was found abandoned, with all crew members missing, but no signs of foul play.</p>
+        <a href="https://en.wikipedia.org/wiki/Mary_Celeste" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+    <div class="crime">
+        <h2 class="text-xl font-bold">The Hinterkaifeck Murders</h2>
+        <p>In 1922, six members of the Gruber family were brutally murdered at their farmstead in Germany. The case remains unsolved, and the circumstances surrounding the murders are shrouded in mystery and speculation.</p>
+        <a href="https://en.wikipedia.org/wiki/Hinterkaifeck_murders" target="_blank" rel="noopener noreferrer" class="source-btn mt-4 inline-block">Source</a>
+    </div>
+
+</div>
+<script>
+    function showContent() {
+        document.getElementById("popup-overlay").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
